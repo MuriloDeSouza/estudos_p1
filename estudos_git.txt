@@ -1,0 +1,41 @@
+SEMANA 1 INSTRUÇÃO 1
+
+Comando para dar commit no GIT
+--- git commit -m "Mensagem do commit"
+
+Comando para enviar as mudanças para o repositório
+--- git push
+
+Comando para fazer o dowload das mudanças feitas 
+--- git pull
+
+Para poder ver os status do GIT
+--- git status
+
+UTILIZANDO O GITHUB
+
+Para adicionar um repositório criado no GitHub ao seu repositório local, é necessário utilizar o comando git remote. O comando git remote adiciona um repositório remoto ao seu repositório local.
+Para poder adicionar um novo repositório por linha de comando
+--- git remote add origin endereco_do_repo_remoto_no_github
+
+O origin é o nome do repositório remoto. Ele é utilizado para referenciar o repositório remoto. Para enviar as mudanças para o repositório remoto, é necessário utilizar o comando git push.
+--- git push -u origin master
+
+CRIANDO AMBIENTE VIRTUAL NA CLI
+O famoso VENV
+
+Estrutura de pastas dentro do arquivo
+.gitignore
+.README.md
+src
+
+Sempre quando for baixar o venv abrimos o CMD e colocamos o seguinte código:
+--- python3 -m venv venv
+
+Para poder colocar para rodar devemos colcoar esse código aqui:
+--- venv\Scripts\activate
+
+Agora, para pegar e baixar todas as extensões juntas fazemos o que:
+--- pip install -r requirements.txt (NO TERMINAL DO PROJETO)
+e depois coloca esse código logo em seguida:
+--- pip freeze > requirements.txt
